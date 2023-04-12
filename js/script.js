@@ -4,6 +4,7 @@ const chao = document.querySelector('.chao');
 const reset = document.getElementById('reiniciar');
 const score = document.getElementById('score');
 const animacaoScore = document.querySelector('#score');
+const dev = document.querySelector('.dev');
 
 const jump = () => {
     mario.classList.add('jump');
@@ -45,8 +46,9 @@ const gameOver = (pipePosition, marioPosition, chaoNum) => {
     chao.style.animation = 'none';
     chao.style.backgroundPosition = `${chaoNum}`;
     animacaoScore.style.animation = 'score 1s infinite';
-    
-    reset.style.display = "inline";
+
+    dev.style.display = 'inline';
+    reset.style.display = 'inline';
     clearInterval(loop);
     clearInterval(loopPontos);
 }
@@ -59,6 +61,7 @@ let loopPontos = setInterval(() => {
 },100);
 
 document.addEventListener('keydown', jump);
+document.getElementById('pular').addEventListener('click', jump )
 document.getElementById('reiniciar').addEventListener('click', () => {
     location.reload();
 })
