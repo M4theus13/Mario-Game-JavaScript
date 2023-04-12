@@ -93,7 +93,6 @@
 }
 
 #pular {
-    display: none;
     position: absolute;
     left: 50%;
     top: 90%;
@@ -210,6 +209,13 @@
             background-position: -965px;
         }
     }
+
+    #pular {
+        left: 90%;
+        top: 90%;
+        width: 90px;
+        height: 90px;
+    }
 }
 
 @media (max-width:1366px) {
@@ -231,6 +237,13 @@
             background-position: -965px;
         }
     }
+    
+    #pular {
+        left: 90%;
+        top: 90%;
+        width: 90px;
+        height: 90px;
+    }
 }
 
 @media (max-width:1024px) {
@@ -251,6 +264,13 @@
         100% {
             background-position: -965px;
         }
+    }
+
+    #pular {
+        left: 90%;
+        top: 90%;
+        width: 90px;
+        height: 90px;
     }
 }
 
