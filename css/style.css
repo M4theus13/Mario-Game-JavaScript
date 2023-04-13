@@ -8,10 +8,21 @@
     color: white;
 }
 
+.size {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .game-board {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     position: relative; /*position relative para guiar as imagens em position absolute*/
     overflow: hidden; /*tudo que estiver fora da caixa ira sumir*/
     background: linear-gradient(#00d4ff, #fefefe);
@@ -38,20 +49,20 @@
     top: 5%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    /* animation: score 1s infinite; */
+    margin-top: 10px;
 }
 
 .pipe {
     position: absolute;
     bottom: 84px;
     width: 80px;
-    animation: pipe-animation 2.7s infinite linear;
+    animation: pipe-animation 1.5s infinite linear;
 }
 
 .mario {
     width: 150px;
     position: absolute;
-    bottom: 84px; /*Alterar dps*/
+    bottom: 184px; /*Alterar dps*/
 }
 
 .chao {
@@ -76,13 +87,11 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("https://cdn0.iconfinder.com/data/icons/interface-150/24/Restart-64.png");
-    background-size: contain;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 50%;
     background-color: #ffe100;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     transition: .5s;
     z-index: 2;
 }
@@ -92,19 +101,34 @@
     background-color: #d7be00;
 }
 
+.img-reiniciar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+}
+
 #pular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     left: 50%;
     top: 90%;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
-    background-image: url("https://cdn3.iconfinder.com/data/icons/font-awesome-solid/512/caret-up-256.png");
-    background-size: contain;
-    border: 2px solid black;
+    background-position: 50% 50%;
+    border: 3px solid black;
     border-radius: 5px;
     background-color: #ffe100;
     transition: .5s;
+}
+
+.img-pular {
+    width: 60px;
+    filter: brightness(0%);
 }
 
 #pular:hover {
@@ -140,11 +164,11 @@
 
 @keyframes pipe-animation {
     from {
-        right: -17vh;
+        left: 270vh; /*166*/
     }
 
     to {
-        right: 300vh;
+        left: -13vh;
     }
 }
 
@@ -190,16 +214,72 @@
     }
 }
 
-@media (max-width:1440px) {
+@media (max-width:2560px) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color: #007eff;
+    }
+
+    .size{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-board{
+        width: 50%;
+        left: 25%;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+    }
+
     .chao {
-        animation: floor 1.23s infinite linear;
+        background-size: contain;
         background-position: 43px;
     }
 
-    .pipe {
-        animation: pipe-animation 2.42s infinite linear;
+    #pular {
+        left: 90%;
+        top: 90%;
+        width: 90px;
+        height: 90px;
     }
 
+    .logo {
+        position: absolute;
+        left: 90%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 100px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/2560px-Mario_Series_Logo.svg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .logo2 {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 100px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/2560px-Mario_Series_Logo.svg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    @keyframes pipe-animation {
+        from {
+            left: 180vh;
+        }
+    
+        to {
+            left: -13vh;
+        }
+    }
+    
     @keyframes floor {
         0% {
             background-position: 43px;
@@ -209,25 +289,76 @@
             background-position: -965px;
         }
     }
+}
+
+@media (max-width:1440px) {
+    .size{
+    }
+    
+    .game-board{
+        width: 100%;
+        left: 50%;
+    }
+
+    .chao {
+        background-size: contain;
+    }
 
     #pular {
         left: 90%;
         top: 90%;
         width: 90px;
         height: 90px;
+    }
+
+    @keyframes pipe-animation {
+        from {
+            left: 200vh;
+        }
+    
+        to {
+            left: -13vh;
+        }
+    }
+    
+    @keyframes floor {
+        0% {
+            background-position: 43px;
+        }
+    
+        100% {
+            background-position: -965px;
+        }
     }
 }
 
 @media (max-width:1366px) {
+    .game-board{
+        width: 100%;
+        left: 50%;
+    }
+
     .chao {
-        animation: floor 1.23s infinite linear;
-        background-position: 43px;
+        background-size: contain;
     }
 
-    .pipe {
-        animation: pipe-animation 2.7s infinite linear;
+    #pular {
+        left: 90%;
+        top: 90%;
+        width: 90px;
+        height: 90px;
     }
 
+    @keyframes pipe-animation {
+        from {
+            left: 185vh;
+        }
+    
+        to {
+            left: -13vh;
+        }
+    }
+    
     @keyframes floor {
         0% {
             background-position: 43px;
@@ -236,24 +367,34 @@
         100% {
             background-position: -965px;
         }
-    }
-    
-    #pular {
-        left: 90%;
-        top: 90%;
-        width: 90px;
-        height: 90px;
     }
 }
 
 @media (max-width:1024px) {
-    .chao {
-        animation: floor 1.23s infinite linear;
-        background-position: 43px;
+    .game-board{
+        width: 100%;
+        left: 50%;
     }
 
-    .pipe {
-        animation: pipe-animation 2.43s infinite linear;
+    .chao {
+        background-size: contain;
+    }
+
+    #pular {
+        left: 90%;
+        top: 85%;
+        width: 90px;
+        height: 90px;
+    }
+
+    @keyframes pipe-animation {
+        from {
+            left: 185vh;
+        }
+    
+        to {
+            left: -13vh;
+        }
     }
 
     @keyframes floor {
@@ -265,16 +406,10 @@
             background-position: -965px;
         }
     }
-
-    #pular {
-        left: 90%;
-        top: 90%;
-        width: 90px;
-        height: 90px;
-    }
 }
 
 @media (max-width:768px) {
+    
     body {
         height: 100vh;
         display: flex;
@@ -285,20 +420,23 @@
     .logo {
         position: absolute;
         left: 50%;
-        top: 80px;
+        top: 13%;
         transform: translate(-50%, -50%);
-        width: 200px;
+        width: 100px;
         height: 100px;
         background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/2560px-Mario_Series_Logo.svg.png");
         background-size: contain;
         background-repeat: no-repeat;
-        
     }
 
     .game-board {
-        height:60vh;
+        height:70vh;
+        left: 50%;
+        top: 35%;
         border-top: 5px solid black ;
         border-bottom: 5px solid black ;
+        border-left: none;
+        border-right: none;
     }
 
     .clouds {
@@ -307,16 +445,17 @@
 
     .chao {
         background-size: cover;
-        animation: floor 1.23s infinite linear;
         background-position: 43px;
     }
 
-    .pipe {
-        animation: pipe-animation 2.43s infinite linear;
-    }
-
-    #pular {
-        display: inline;
+    @keyframes pipe-animation {
+        from {
+            left: 166vh;
+        }
+    
+        to {
+            left: -13vh;
+        }
     }
 
     @keyframes floor {
@@ -333,10 +472,18 @@
 
 @media (max-width:480px) {
     body {
-        height: 100vh;
+        width: 100vw;
         display: flex;
         align-items: center;
         background-color: #007eff;
+    }
+
+    .size {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 50vh;
     }
     
     .logo {
@@ -344,8 +491,8 @@
         left: 50%;
         top: 80px;
         transform: translate(-50%, -50%);
-        width: 200px;
-        height: 100px;
+        width: 150px;
+        height: 70px;
         background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/2560px-Mario_Series_Logo.svg.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -353,27 +500,35 @@
     }
 
     .game-board {
-        height: 50vh;
-        border-top: 5px solid black ;
-        border-bottom: 5px solid black ;
+        width: 200vw;
+        left: -50%;
+        top: 0px;
+        border-top: 3px solid black ;
+        border-bottom: 3px solid black ;
+        border-left: none;
+        border-right: none;
+        transform: scale(0.5);
     }
 
     .chao {
         background-size: cover;
-        animation: floor 1.83s infinite linear;
         background-position: 43px;
-    }
-
-    .pipe {
-        animation: pipe-animation 4.5s infinite linear;
     }
 
     .clouds {
         width: 300px;
     }
 
+    #score {
+        width: 240px;
+        height: 50px;
+        font-size: 30px;
+    }
+
     #pular {
-        display: inline;
+        left: 50%;
+        top: 85%;
+        transform: translate(-50%, -50%);
     }
 
     @keyframes floor {
@@ -388,11 +543,11 @@
 
     @keyframes pipe-animation {
         from {
-            right: -100vh;
+            left: 166vh;
         }
     
         to {
-            right: 300vh;
+            left: -13vh;
         }
     }
 
