@@ -13,12 +13,12 @@ Visual do jogo será com o tema do jogo Mario
 
 <div>
   <h3>Desktop</h3>
-  <img width="40%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print1.png">
-  <img width="40%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print2.png">
+  <img width="49%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print1.png">
+  <img width="49%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print2.png">
   
   <h3>Tablets</h3>
-  <img width="40%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print6.png">
-  <img width="40%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print7.png"> 
+  <img width="49%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print6.png">
+  <img width="49%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print7.png"> 
   
   <h3>Mobile</h3>
   <img src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print4.png">
