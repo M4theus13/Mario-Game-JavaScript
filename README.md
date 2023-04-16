@@ -6,6 +6,9 @@ Jogo de pular obstáculos e quando você colide com algum obstáculo o jogo term
 
 Visual do jogo será com o tema do jogo Mario
 
+<h1>Projeto Finalizado</h1>
+<p>Game hospedado no site da <a href="bohr.io">bohr.io</a> para testar o game, segue o <a href="https://game-mario-js.bohr.io">link</a> </p>
+
 <h1 text-align="center">Resultado</h1>
 
 <div>
