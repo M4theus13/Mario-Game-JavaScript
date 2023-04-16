@@ -24,3 +24,7 @@ Visual do jogo será com o tema do jogo Mario
   <img src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print4.png">
   <img src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print5.png">
 </div>
+
+<h1 align="center"> ⚙ Tecnologias </h1>
+
+<p align="center"> 🟠HTML<br/> 🔵CSS<br/> 🟡JavaScript<br/> ⚫Github</p>
