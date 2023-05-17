@@ -2,8 +2,8 @@
 
 <p align="center">
   <a href="https://github.com/M4theus13/Mario-Game-JavaScript/blob/main/README.md#descri%C3%A7%C3%A3o-do-projeto">Descrição do Projeto</a> •
-  <a href="https://github.com/M4theus13/Mario-Game-JavaScript/edit/main/README.md#resultado">Resultado</a> •
-  <a href="https://github.com/M4theus13/Mario-Game-JavaScript/edit/main/README.md#--tecnologias-">Tecnologias</a>	
+  <a href="https://github.com/M4theus13/Mario-Game-JavaScript/blob/main/README.md#resultado">Resultado</a> •
+  <a href="https://github.com/M4theus13/Mario-Game-JavaScript/blob/main/README.md#--tecnologias-">Tecnologias</a>	
 </p>
 
 <h2 align="center">Descrição do Projeto</h2>
