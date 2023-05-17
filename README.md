@@ -13,8 +13,9 @@
 </h4>
 
 <p align="center">
-  Jogo do Mario utilizando Html, Css e JavaScript <br>
-  Objetivo é pular os obstáculos, ao colidir com algum obstáculo o jogo termina. <br>
+  Jogo runner do Mario <br>
+  Objetivo é pular os obstáculos, o score vai aumentando de acordo com o tempo de jogo, ao colidir com algum obstáculo o jogo termina. <br>
+  Site criado com responsividade para telas menores
 </p>
 
 <p align="center">Para testar o game, segue o <a href="https://game-mario-js.bohr.io">link</a> </p>
