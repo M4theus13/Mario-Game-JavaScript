@@ -13,9 +13,8 @@
 </h4>
 
 <p align="center">
-  Projeto: Criar um jogo simples com Html, Css e JavaScript para estudos <br>
-  Jogo de pular obstáculos e quando você colide com algum obstáculo o jogo termina. <br>
-  Visual do jogo será com o tema do jogo Mario <br>
+  Jogo do Mario utilizando Html, Css e JavaScript <br>
+  Objetivo é pular os obstáculos, ao colidir com algum obstáculo o jogo termina. <br>
 </p>
 
 <p align="center">Para testar o game, segue o <a href="https://game-mario-js.bohr.io">link</a> </p>
