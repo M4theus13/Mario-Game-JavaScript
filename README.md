@@ -30,7 +30,7 @@
 </div>
   
 <div align="center">
-  <h3>Tablets</h3>
+  <h3>Tablet</h3>
   <a href='https://github.com/M4theus13'>
       <img width="39%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Mario-Game-JavaScript/tablet.png">
       <img width="39%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Mario-Game-JavaScript/tablet(1).png"> 
