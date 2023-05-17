@@ -1,10 +1,9 @@
 <h1 align="center">Mario Game</h1>
 
-<h2 align="center">Tabela</h2>
-
 <p align="center">
-  <a href="Descrição do Projeto">Descrição do Projeto</a> •
-  <a href="Resultado">Resultado</a> •
+  <a href="https://github.com/M4theus13/Mario-Game-JavaScript/blob/main/README.md#descri%C3%A7%C3%A3o-do-projeto">Descrição do Projeto</a> •
+  <a href="https://github.com/M4theus13/Mario-Game-JavaScript/edit/main/README.md#resultado">Resultado</a> •
+  <a href="https://github.com/M4theus13/Mario-Game-JavaScript/edit/main/README.md#--tecnologias-">Tecnologias</a>	
 </p>
 
 <h2 align="center">Descrição do Projeto</h2>
@@ -21,7 +20,7 @@
 
 <p align="center">Para testar o game, segue o <a href="https://game-mario-js.bohr.io">link</a> </p>
 
-<h1 text-align="center">Resultado</h1>
+<h1 align="center">Resultado</h1>
 
 <div align='center'>
   <h3>Desktop</h3>
