@@ -11,18 +11,28 @@ Visual do jogo será com o tema do jogo Mario
 
 <h1 text-align="center">Resultado</h1>
 
-<div>
+<div align='center'>
   <h3>Desktop</h3>
-  <img width="49%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print1.png">
-  <img width="49%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print2.png">
+  <a href='https://github.com/M4theus13'>
+    <img width="49%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print1.png">
+    <img width="49%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print2.png">
+  </a>
+</div>
   
+<div align="center">
   <h3>Tablets</h3>
-  <img width="49%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print6.png">
-  <img width="49%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print7.png"> 
+  <a href='https://github.com/M4theus13'>
+      <img width="39%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print6.png">
+      <img width="39%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print7.png"> 
+  </a>
+</div>
   
+<div align="center">
   <h3>Mobile</h3>
-  <img src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print4.png">
-  <img src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print5.png">
+  <a href='https://github.com/M4theus13'>
+      <img width="30%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print4.png">
+      <img width="30%" src="https://github.com/M4theus13/Assets_Projects/blob/main/Game_JavaScript_Prints/print5.png">
+  </a>
 </div>
 
 <h1 align="center"> ⚙ Tecnologias </h1>
