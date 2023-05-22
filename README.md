@@ -18,7 +18,7 @@
   Site criado com responsividade para telas menores.
 </p>
 
-<p align="center">Para testar o game, segue o <a href="https://game-mario-js.bohr.io">link</a> </p>
+<p align="center">Para testar o projeto, segue o <a href="https://game-mario-js.bohr.io">link</a> </p>
 
 <h1 align="center">Resultado</h1>
 
