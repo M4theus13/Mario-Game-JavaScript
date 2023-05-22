@@ -20,7 +20,7 @@
 
 <p align="center">Para testar o projeto, segue o <a href="https://game-mario-js.bohr.io">link</a> </p>
 
-<h1 align="center">Resultado</h1>
+<h2 align="center">Resultado</h2>
 
 <div align='center'>
   <h3>Desktop</h3>
